@@ -1,5 +1,4 @@
 pluginManagement {
-    includeBuild("../node_modules/@react-native/gradle-plugin")
     repositories {
         google()
         mavenCentral()
@@ -12,3 +11,4 @@ plugins {
 extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
 rootProject.name = 'OmegaTerminal'
 include ':app'
+includeBuild("../node_modules/@react-native/gradle-plugin")
